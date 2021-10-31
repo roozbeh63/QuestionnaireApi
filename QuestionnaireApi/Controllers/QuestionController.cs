@@ -3,10 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using QuestionnaireApi.Models;
 using QuestionnaireApi.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace QuestionnaireApi.Controllers
 {

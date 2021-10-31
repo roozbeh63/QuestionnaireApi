@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace QuestionnaireApi.Services
+﻿namespace QuestionnaireApi.Services
 {
     public class AnswerService : BaseService<QuestionnaireApi.Models.Answer>
     {

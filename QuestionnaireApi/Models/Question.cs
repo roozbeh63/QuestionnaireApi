@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuestionnaireApi.Models
 {
@@ -27,5 +23,7 @@ namespace QuestionnaireApi.Models
         public QuestionType Type { get; set; }
         public bool Enabled { get; set; }
         public long DependentQuestionId { get; set; }
+
+        public long TopicId { get; set; }
     }
 }
