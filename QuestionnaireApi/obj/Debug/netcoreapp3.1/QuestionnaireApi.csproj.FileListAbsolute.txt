@@ -65,3 +65,11 @@ D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\runti
 D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\Git\Questionnaire-App\QuestionnaireApi\obj\Debug\netcoreapp3.1\QuestionnaireApi.csproj.CopyComplete
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\AutoMapper.EF6.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\DelegateDecompiler.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\DelegateDecompiler.EntityFramework.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\EntityFramework.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\Mono.Reflection.dll
+D:\Projects\Git\Questionnaire-App\QuestionnaireApi\bin\Debug\netcoreapp3.1\System.CodeDom.dll

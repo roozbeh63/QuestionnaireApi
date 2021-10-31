@@ -27,8 +27,14 @@ namespace QuestionnaireApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            /** entity framework connection string configuration */
             var configurationSection = Configuration.GetSection("ConnectionStrings:DefaultConnection");
             services.AddDbContext<QAContext>(options => options.UseSqlServer(configurationSection.Value));
+            /** add services of the application */
+            services.AddScoped<QuestionService>();
+            services.AddScoped<TopicService>();
+            services.AddScoped<AnswerService>();
+            services.AddScoped<QuestionnaireService>();
             services.AddControllers();
         }
 
