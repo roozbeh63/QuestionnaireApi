@@ -12,7 +12,10 @@ namespace QuestionnaireApi.Services
 
         public async Task<DataTable> GetQuestionOfQuestionnaireAsync(string appName)
         {
-            return await this.context.RawSqlQueryAsync($"select * from {new Questionnaire().TableName}", new System.Collections.Generic.Dictionary<string, object>
+            return await this.context.RawSqlQueryAsync($@"SELECT * FROM {new Questionnaire().TableName} Q
+LEFT JOIN {new Topic().TableName} T ON Q.ID = T.QuestionnaireId
+LEFT JOIN {new Question().TableName} QQ ON T.ID = QQ.TopicId",
+                new System.Collections.Generic.Dictionary<string, object>
             {
                 { "app", appName }
             });

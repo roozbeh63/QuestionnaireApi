@@ -28,6 +28,11 @@ namespace QuestionnaireApi
             services.AddScoped<TopicService>();
             services.AddScoped<AnswerService>();
             services.AddScoped<QuestionnaireService>();
+
+            services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
             services.AddControllers();
         }
 

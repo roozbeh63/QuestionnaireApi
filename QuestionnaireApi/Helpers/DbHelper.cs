@@ -21,6 +21,7 @@ namespace QuestionnaireApi.Helpers
             tasks.Add(new Questionnaire().CreateTableIfNotExists<Questionnaire>(dbContext));
             tasks.Add(new Question().CreateTableIfNotExists<Question>(dbContext));
             tasks.Add(new Answer().CreateTableIfNotExists<Answer>(dbContext));
+            tasks.Add(new Topic().CreateTableIfNotExists<Topic>(dbContext));
 
             await Task.WhenAll(tasks);
         }
