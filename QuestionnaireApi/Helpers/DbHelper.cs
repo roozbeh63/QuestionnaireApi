@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using QuestionnaireApi.Models;
+﻿using QuestionnaireApi.Models;
 using QuestionnaireApi.Services;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace QuestionnaireApi.Helpers
@@ -19,13 +16,13 @@ namespace QuestionnaireApi.Helpers
 
         public async Task CreateTableIfNotExists()
         {
-            await new Questionnaire().CreateTableIfNotExists<Questionnaire>(dbContext);
+            List<Task> tasks = new List<Task>();
 
-            await new Question().CreateTableIfNotExists<Question>(dbContext);
+            tasks.Add(new Questionnaire().CreateTableIfNotExists<Questionnaire>(dbContext));
+            tasks.Add(new Question().CreateTableIfNotExists<Question>(dbContext));
+            tasks.Add(new Answer().CreateTableIfNotExists<Answer>(dbContext));
 
-            await new Answer().CreateTableIfNotExists<Answer>(dbContext);
-
-            await new QuestionOnTopic().CreateTableIfNotExists<QuestionOnTopic>(dbContext);
+            await Task.WhenAll(tasks);
         }
     }
 }
